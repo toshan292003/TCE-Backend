@@ -1,0 +1,28 @@
+Backend
+
+NodeJS
+
+Node JS is runtime env for Js which executes Js code outside the browser
+
+for initialization of Node project -> npm init
+
+HTTP methods:
+Get     -Read Data
+Post    -Create Data
+Put     -Update Data
+Delete  -Dellete Data
+
+
+Connecting a server using Express:
+
+const express = require("express");
+const app = express();
+
+app.get("/home",(req,res)=>{
+    res.send("Test API");
+});
+
+app.listen(4000, ()=>{
+    console.log("Server is Connected.");
+});
+
